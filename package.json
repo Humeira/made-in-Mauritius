@@ -1,0 +1,20 @@
+{
+  "name": "made-in-mauritius",
+  "version": "1.0.0",
+  "description": "A list of cool open-source projects made in Mauritius",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Humeira/made-in-Mauritius.git"
+  },
+  "keywords": [
+    "open-source",
+    "projects"
+    "Mauritius",
+  ],
+  "author": "Humeira Diljore",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Humeira/made-in-Mauritius/issues"
+  },
+  "homepage": "https://github.com/Humeira/made-in-Mauritius#readme"
+}
