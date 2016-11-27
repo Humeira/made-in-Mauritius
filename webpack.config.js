@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
@@ -37,5 +38,12 @@ module.exports = {
             }
 
         ]
-    }
+    },
+
+    plugins : [
+        new HtmlWebpackPlugin({
+            title : 'Made in Mauritius',
+            filename : 'index.html'
+        })
+    ]
 }
