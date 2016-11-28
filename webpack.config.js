@@ -1,12 +1,11 @@
 var path = require('path');
 var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, './dist'),
-        publicPath: '/made-in-Mauritius/',
+        publicPath: '/dist/',
         filename: 'build.js'
     },
 
@@ -38,12 +37,5 @@ module.exports = {
             }
 
         ]
-    },
-
-    plugins : [
-        new HtmlWebpackPlugin({
-            title : 'Made in Mauritius',
-            filename : 'index.html'
-        })
-    ]
+    }
 }
