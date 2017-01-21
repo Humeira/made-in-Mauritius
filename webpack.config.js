@@ -1,12 +1,19 @@
 var path = require('path');
 var webpack = require('webpack');
+var extractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        app: './src/index.js',
+        lib: [
+            'bootstrap/dist/js/bootstrap.min',
+            'jquery/dist/jquery.min'
+        ]
+    },
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
-        filename: 'build.js'
+        filename: '[name].js'
     },
 
     module: {
@@ -28,14 +35,24 @@ module.exports = {
                 }
             },
             {
-                test : /\.css$/,
-                loader : "css-loader"
+                test: /\.css$/,
+                loader: extractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader' })
+
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
                 loader: 'url-loader?limit=100000'
             }
-
         ]
-    }
+    },
+
+    plugins: [
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        }),
+
+        new extractTextPlugin('[name].css')
+    ],
+
 }
