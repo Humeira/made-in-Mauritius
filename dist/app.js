@@ -6330,7 +6330,7 @@ module.exports = Vue$2;
         repo_name: 'made-in-mauritius',
         repo_link: 'https://github.com/Humeira/made-in-Mauritius',
         description: 'A list of cool open-source projects made in Mauritius',
-        language_tag: 'vue'
+        language_tag: 'Vue'
     }]
 };
 
@@ -6389,14 +6389,6 @@ module.exports = Vue$2;
     mounted: function mounted() {
         this.$nextTick(function () {});
     },
-
-    watch: {
-        tag: function tag() {
-            console.log('watch');
-            console.log(this.tag);
-        }
-    },
-
     methods: {
         getColourTag: function getColourTag(lang) {
             var self = this;
@@ -6821,7 +6813,12 @@ module.exports={render:function (){var _vm=this;
       attrs: {
         "href": project.repo_link
       }
-    }, [_vm._s(project.repo_name)])]), " ", _vm._h('td', [_vm._s(project.description)]), " ", _vm._h('td', [_vm._h('span', {
+    }, [_vm._s(project.repo_name)])]), " ", _vm._h('td', [_vm._s(project.description)]), " ", _vm._h('td', {
+      directives: [{
+        name: "show",
+        rawName: "v-show"
+      }]
+    }, [_vm._s(_vm.getColourTag(project.language_tag))]), " ", _vm._h('td', [_vm._h('span', {
       staticClass: "label",
       class: [_vm.tag ? _vm.getColourTag(project.language_tag) : 'label-default']
     }, [_vm._s(project.language_tag)])])])
