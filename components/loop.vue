@@ -3,29 +3,31 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="table-responsive p-t-20">
-                    <table class="table table-bordered table-striped">
+                    <table class="table table-bordered table-striped" id="project-table">
                         <thead>
-                        <th>#</th>
-                        <th>Username</th>
-                        <th>Repo</th>
-                        <th>Description</th>
-                        <th>Language</th>
+                        <tr>
+                            <th>#</th>
+                            <th>Username</th>
+                            <th>Repo</th>
+                            <th>Description</th>
+                            <th>Language</th>
+                        </tr>
+
                         </thead>
                         <tbody>
-                        <tr v-for="(project, index) in projectData.projects">
-                            <td>{{ index + 1 }}</td>
-                            <td>
-                                <a :href="'http://github.com/' + project.github_username">{{project.github_username}}</a>
-                            </td>
-                            <td><a :href="project.repo_link">{{project.repo_name}}</a></td>
-                            <td>{{project.description}}</td>
-                            <!--<td v-show>{{getColourTag(project.language_tag)}}</td>-->
-                            <!--<td><span class="label" v-bind:class="[tag ? getColourTag(project.language_tag) : 'label-default']">{{project.language_tag}}</span></td>-->
-                            <td>
-                                <span class="label" v-bind:class="[getColourTag(project.language_tag) ? toString(project.language_tag) : 'label-default']">
-                                 {{project.language_tag}}
-                                </span>
-                            </td>
+                            <tr v-for="(project, index) in projectData.projects">
+                                <td>{{ index + 1 }}</td>
+                                <td>
+                                    <a :href="'http://github.com/' + project.github_username">{{project.github_username}}</a>
+                                </td>
+                                <td><a :href="project.repo_link">{{project.repo_name}}</a></td>
+                                <td>{{project.description}}</td>
+                                <td>
+                                    <span class="label" v-bind:class="[getColourTag(project.language_tag) ? toString(project.language_tag) : 'label-default']">
+                                     {{project.language_tag}}
+                                    </span>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -48,6 +50,7 @@
         },
 
         mounted: function () {
+            $("#project-table").DataTable();
         },
         methods: {
             getColourTag: function (lang) {
