@@ -19,8 +19,13 @@
                             </td>
                             <td><a :href="project.repo_link">{{project.repo_name}}</a></td>
                             <td>{{project.description}}</td>
-                            <td v-show>{{getColourTag(project.language_tag)}}</td>
-                            <td><span class="label" v-bind:class="[tag ? getColourTag(project.language_tag) : 'label-default']">{{project.language_tag}}</span></td>
+                            <!--<td v-show>{{getColourTag(project.language_tag)}}</td>-->
+                            <!--<td><span class="label" v-bind:class="[tag ? getColourTag(project.language_tag) : 'label-default']">{{project.language_tag}}</span></td>-->
+                            <td>
+                                <span class="label" v-bind:class="[getColourTag(project.language_tag) ? toString(project.language_tag) : 'label-default']">
+                                 {{project.language_tag}}
+                                </span>
+                            </td>
                         </tbody>
                     </table>
                 </div>
@@ -37,32 +42,39 @@
             return {
                 projectData: projects,
                 coloursData: colours,
-                tag: false,
+                tag: false
 
             }
         },
 
         mounted: function () {
-            this.$nextTick(function () {
-
-            })
         },
         methods: {
             getColourTag: function (lang) {
-                var self = this;
+                const self = this;
+                let tempTag = true;
                 const coloursList = this.coloursData.colours;
-                let current_lang = lang.toString().toLowerCase();
-                for(var i = 0; i<coloursList.length; i++){
-                    if(coloursList[i].name ===  current_lang) {
-                        self.tag = true
-                        break
+                const current_lang = lang.toString().toLowerCase();
+                for (var i = 0; i < coloursList.length; i++) {
+                    if (coloursList[i].name === current_lang) {
+                        tempTag = true;
+                        break;
                     }
                     else {
-                        self.tag = false
+                        tempTag = false;
                     }
 
                 }
-                return current_lang
+                if (tempTag === true) {
+                    return self.tag = true;
+                }
+                else {
+                    return self.tag = false;
+                }
+            },
+
+            toString: function (lang) {
+                return lang.toString().toLowerCase();
             }
         }
 
