@@ -1,8 +1,12 @@
 import Vue from 'vue'
 import App from './app.vue'
 
+require('datatables.net/js/jquery.dataTables.js');
+require('datatables.net-bs/js/dataTables.bootstrap.js');
+
 require('bootstrap/dist/css/bootstrap.min.css');
-require('./assets/colours.css')
+require('datatables.net-bs/css/dataTables.bootstrap.css');
+require('./assets/colours.css');
 
 new Vue({
     el: '#app',
