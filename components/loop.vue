@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="table-responsive p-t-20">
+                <div class="table-responsive p-30 m-t-30">
                     <table class="table table-bordered table-striped" id="project-table">
                         <thead>
                         <tr>
@@ -87,8 +87,13 @@
 
 
 <style>
-    .p-t-20 {
-        padding-top: 20px;
+
+    .m-t-30 {
+        margin-top: 30px;
+    }
+
+    .p-30 {
+        padding: 30px;
     }
 
     table th {
