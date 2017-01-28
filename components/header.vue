@@ -54,4 +54,15 @@
         color: #136a8a;
     }
 
+    @media screen and (max-width: 640px) {
+        .hero__title {
+            padding-top: 50px;
+            font-size: 36px;
+        }
+
+        .hero__desc {
+            font-size: 22px;
+        }
+    }
+
 </style>
