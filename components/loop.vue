@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container content">
         <div class="row">
             <div class="col-md-12">
                 <div class="table-responsive p-30 m-t-30">
@@ -15,19 +15,20 @@
 
                         </thead>
                         <tbody>
-                            <tr v-for="(project, index) in projectData.projects">
-                                <td>{{ index + 1 }}</td>
-                                <td>
-                                    <a :href="'http://github.com/' + project.github_username">{{project.github_username}}</a>
-                                </td>
-                                <td><a :href="project.repo_link">{{project.repo_name}}</a></td>
-                                <td>{{project.description}}</td>
-                                <td>
-                                    <span class="label" v-bind:class="[getColourTag(project.language_tag) ? toString(project.language_tag) : 'label-default']">
+                        <tr v-for="(project, index) in projectData.projects">
+                            <td>{{ index + 1 }}</td>
+                            <td>
+                                <a :href="'http://github.com/' + project.github_username">{{project.github_username}}</a>
+                            </td>
+                            <td><a :href="project.repo_link">{{project.repo_name}}</a></td>
+                            <td>{{project.description}}</td>
+                            <td>
+                                    <span class="label"
+                                          v-bind:class="[getColourTag(project.language_tag) ? toString(project.language_tag) : 'label-default']">
                                      {{project.language_tag}}
                                     </span>
-                                </td>
-                            </tr>
+                            </td>
+                        </tr>
                         </tbody>
                     </table>
                 </div>
@@ -87,7 +88,9 @@
 
 
 <style>
-
+    .content {
+        min-height: calc(100vh - 335px);
+    }
     .m-t-30 {
         margin-top: 30px;
     }
@@ -102,5 +105,11 @@
 
     table {
         font-size: 18px;
+    }
+
+    @media screen and (max-width: 767px) {
+        .table-responsive {
+            border: 0;
+        }
     }
 </style>
