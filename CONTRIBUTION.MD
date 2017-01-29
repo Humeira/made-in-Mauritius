@@ -13,17 +13,17 @@ Contributors are most welcome here. However, before getting started, please go t
 1. Fork this repo
 2. Add your project in the `json/projects.js` file
 
-Here's an example :
+        Here's an example :
 
-```
-        {
-            github_username: 'Humeira',
-            repo_name: 'made-in-mauritius',
-            repo_link: 'https://github.com/Humeira/made-in-Mauritius',
-            description: 'A list of cool open-source projects made in Mauritius',
-            language_tag: 'Vue'
-        }
-```
+        ```
+                {
+                    github_username: 'Humeira',
+                    repo_name: 'made-in-mauritius',
+                    repo_link: 'https://github.com/Humeira/made-in-Mauritius',
+                    description: 'A list of cool open-source projects made in Mauritius',
+                    language_tag: 'Vue'
+                }
+        ```
 
 3. Submit a pull request
 
