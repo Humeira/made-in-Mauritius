@@ -8,6 +8,8 @@ require('bootstrap/dist/css/bootstrap.min.css');
 require('datatables.net-bs/css/dataTables.bootstrap.css');
 require('./assets/colours.css');
 
+require('../favicon.ico')
+
 new Vue({
     el: '#app',
     render: h => h(App)
