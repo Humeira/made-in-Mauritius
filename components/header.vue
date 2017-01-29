@@ -8,7 +8,7 @@
                 <p class="hero__desc">
                     A list of cool open source projects developed on the beautiful island of Mauritius
                 </p>
-                <a class="btn btn-info btn-lg hero__btn">Add your projects</a>
+                <a class="btn btn-info btn-lg hero__btn" :href="'https://github.com/Humeira/made-in-Mauritius/blob/master/CONTRIBUTION.MD'">Add your projects</a>
             </div>
         </div>
     </div>
@@ -48,7 +48,7 @@
         transition: 0.2s ease-in background;
     }
 
-    .hero__btn:hover, .hero__btn:focus, .hero__btn:visited {
+    .hero__btn:hover, .hero__btn:focus {
         background: #fff;
         border-color: #136a8a;
         color: #136a8a;

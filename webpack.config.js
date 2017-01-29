@@ -42,6 +42,10 @@ module.exports = {
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
                 loader: 'url-loader?limit=100000'
+            },
+            {
+                test: /\.jpe?g$|\.ico$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$|\.wav$|\.mp3$/,
+                loader: 'file-loader?name=[name].[ext]'
             }
         ]
     },
