@@ -1,5 +1,5 @@
 # Contributing
--
+
 Contributors are most welcome here. However, before getting started, please go through the following steps.
 
 1. Fork this repo
@@ -8,7 +8,7 @@ Contributors are most welcome here. However, before getting started, please go t
 
 
 # Add your projects fo the list
---
+
 
 1. Fork this repo
 2. Add your project in the `json/projects.js` file
