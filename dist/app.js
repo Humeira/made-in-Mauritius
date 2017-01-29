@@ -32224,7 +32224,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, "\n.hero {\n    background: #136a8a; /* fallback for old browsers */\n    background: -webkit-linear-gradient(to left, #136a8a, #267871); /* Chrome 10-25, Safari 5.1-6 */\n    background: linear-gradient(to left, #136a8a, #267871); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n    min-height: 275px;\n    padding: 0;\n}\n.hero__title {\n    padding-top: 60px;\n    margin: 0;\n    font-size: 48px;\n    font-weight: bold;\n    text-align: center;\n    color: #fafafa;\n}\n.hero__desc {\n    padding: 10px;\n    font-size: 24px;\n    text-align: center;\n    color: #fafafa\n}\n.hero__btn {\n    border: 2px solid;\n    background: transparent;\n    max-width: 200px;\n    display: block;\n    margin: 0 auto;\n    transition: 0.2s ease-in background;\n}\n.hero__btn:hover, .hero__btn:focus, .hero__btn:visited {\n    background: #fff;\n    border-color: #136a8a;\n    color: #136a8a;\n}\n@media screen and (max-width: 640px) {\n.hero__title {\n        padding-top: 50px;\n        font-size: 36px;\n}\n.hero__desc {\n        font-size: 22px;\n}\n}\n\n", ""]);
+exports.push([module.i, "\n.hero {\n    background: #136a8a; /* fallback for old browsers */\n    background: -webkit-linear-gradient(to left, #136a8a, #267871); /* Chrome 10-25, Safari 5.1-6 */\n    background: linear-gradient(to left, #136a8a, #267871); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\n    min-height: 275px;\n    padding: 0;\n}\n.hero__title {\n    padding-top: 60px;\n    margin: 0;\n    font-size: 48px;\n    font-weight: bold;\n    text-align: center;\n    color: #fafafa;\n}\n.hero__desc {\n    padding: 10px;\n    font-size: 24px;\n    text-align: center;\n    color: #fafafa\n}\n.hero__btn {\n    border: 2px solid;\n    background: transparent;\n    max-width: 200px;\n    display: block;\n    margin: 0 auto;\n    transition: 0.2s ease-in background;\n}\n.hero__btn:hover, .hero__btn:focus {\n    background: #fff;\n    border-color: #136a8a;\n    color: #136a8a;\n}\n@media screen and (max-width: 640px) {\n.hero__title {\n        padding-top: 50px;\n        font-size: 36px;\n}\n.hero__desc {\n        font-size: 22px;\n}\n}\n\n", ""]);
 
 // exports
 
@@ -32608,8 +32608,6 @@ if (false) {
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;
   return _vm._h('div', {
     staticClass: "container-fluid"
   }, [_vm._h('div', {
@@ -32621,9 +32619,12 @@ module.exports={render:function (){var _vm=this;
   }, ["\n                Made in Mauritius\n            "]), " ", _vm._h('p', {
     staticClass: "hero__desc"
   }, ["\n                A list of cool open source projects developed on the beautiful island of Mauritius\n            "]), " ", _vm._h('a', {
-    staticClass: "btn btn-info btn-lg hero__btn"
+    staticClass: "btn btn-info btn-lg hero__btn",
+    attrs: {
+      "href": 'https://github.com/Humeira/made-in-Mauritius/blob/master/CONTRIBUTION.MD'
+    }
   }, ["Add your projects"])])])])
-}]}
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
