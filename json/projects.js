@@ -1,5 +1,5 @@
 export default {
-    projects : [
+    projects: [
         {
             github_username: 'Humeira',
             repo_name: 'made-in-mauritius',
@@ -13,6 +13,13 @@ export default {
             repo_link: 'https://github.com/Nayar/KDE-for-Mauritius',
             description: 'Adapting KDE in the Mauritian Context',
             language_tag: 'Bash'
+        },
+        {
+            github_username: 'Mscraftsman',
+            repo_name: 'devcon2017',
+            repo_link: 'https://github.com/mscraftsman/devcon2017',
+            description: 'Website of Developers Conference 2017 in Mauritius ',
+            language_tag: 'CSS'
         }
     ]
 }
