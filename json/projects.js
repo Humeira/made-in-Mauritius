@@ -55,6 +55,13 @@ export default {
             repo_link: 'https://github.com/percymamedy/crafter',
             description: 'Install your favourite PHP frameworks using only one installer.',
             language_tag: 'PHP'
+        },
+        {
+            github_username: 'jcplaboratory',
+            repo_name: 'rashell',
+            repo_link: 'https://github.com/jcplaboratory/rashell',
+            description: 'An open-source Shell (Command-processor) for Windows.',
+            language_tag: 'C#'
         }
     ]
 }
