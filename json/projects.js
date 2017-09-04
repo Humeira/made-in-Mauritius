@@ -51,6 +51,13 @@ export default {
         },
         {
             github_username: 'percymamedy',
+            repo_name: 'Pine Annotations',
+            repo_link: 'https://github.com/LaraChimp/pine-annotations',
+            description: 'Easing Annotations reading and parsing in Laravel 5.',
+            language_tag: 'PHP'
+        },
+        {
+            github_username: 'percymamedy',
             repo_name: 'Crafter',
             repo_link: 'https://github.com/percymamedy/crafter',
             description: 'Install your favourite PHP frameworks using only one installer.',
