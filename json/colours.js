@@ -57,7 +57,7 @@ export default {
             code: '#0298c3'
         },
         {
-            name: 'c#',
+            name: 'C#',
             code: '#178600'
         }
 

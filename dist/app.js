@@ -32052,7 +32052,7 @@ module.exports = Vue$2;
         name: 'perl',
         code: '#0298c3'
     }, {
-        name: 'c#',
+        name: 'C#',
         code: '#178600'
     }]
 };
@@ -32104,6 +32104,12 @@ module.exports = Vue$2;
         repo_name: 'Mango Repo',
         repo_link: 'https://github.com/LaraChimp/mango-repo',
         description: 'Repository Pattern for Laravel 5 made simple.',
+        language_tag: 'PHP'
+    }, {
+        github_username: 'percymamedy',
+        repo_name: 'Pine Annotations',
+        repo_link: 'https://github.com/LaraChimp/pine-annotations',
+        description: 'Easing Annotations reading and parsing in Laravel 5.',
         language_tag: 'PHP'
     }, {
         github_username: 'percymamedy',
@@ -32286,7 +32292,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, "\n.content {\n    min-height: calc(100vh - 335px);\n}\n.m-t-30 {\n    margin-top: 30px;\n}\n.p-30 {\n    padding: 30px;\n}\ntable th {\n    text-align: center;\n}\ntable {\n    font-size: 18px;\n}\n@media screen and (max-width: 767px) {\n.table-responsive {\n        border: 0;\n}\n}\n", ""]);
+exports.push([module.i, "\n.content {\n    min-height: calc(100vh - 335px);\n}\n.m-t-30 {\n    margin-top: 30px;\n}\n.p-30 {\n    padding: 30px;\n}\ntable th {\n    text-align: center;\n}\ntable {\n    font-size: 18px;\n}\ntable tr td:last-child {\n    text-align: center;\n    vertical-align: middle;\n}\n@media screen and (max-width: 767px) {\n.table-responsive {\n        border: 0;\n}\n}\n", ""]);
 
 // exports
 

@@ -107,6 +107,11 @@
         font-size: 18px;
     }
 
+    table tr td:last-child {
+        text-align: center;
+        vertical-align: middle;
+    }
+
     @media screen and (max-width: 767px) {
         .table-responsive {
             border: 0;
