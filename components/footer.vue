@@ -2,11 +2,20 @@
 
     <footer class="footer">
         <div class="container-fluid text-center">
-            <p class="text-muted">Copyright © 2017 <a :href="'http://github.com/Humeira'">Humeira Diljore</a>. </p>
+            <p class="text-muted">Copyright © {{ date }} <a :href="'http://github.com/Humeira'">Humeira Diljore</a>. </p>
         </div>
     </footer>
 </template>
 
+<script>
+    export default{
+        data () {
+            return {
+                date : new Date().getFullYear()
+            }
+        }
+    }
+</script>
 <style>
     .footer {
         position: absolute;
