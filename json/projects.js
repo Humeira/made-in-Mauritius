@@ -76,6 +76,13 @@ export default {
             repo_link: 'https://github.com/Abdur-rahmaanJ/greenBerry',
             description: 'A one-line statement language complete with classes. Cli and file compatible.',
             language_tag: 'Python'
+        },
+        {
+            github_username: 'Abdur-RahmaanJ',
+            repo_name: 'honeybot',
+            repo_link: 'https://github.com/Abdur-rahmaanJ/honeybot',
+            description: 'IRC bot with plugins',
+            language_tag: 'Python'
         }
 
     ]
