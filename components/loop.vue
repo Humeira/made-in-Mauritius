@@ -2,7 +2,7 @@
     <div class="container content">
         <div class="row">
             <div class="col-md-12">
-                <div class="table-responsive p-30 m-t-30">
+                <div class="table-responsive p-30 m-t-30 ">
                     <table class="table table-bordered table-striped" id="project-table">
                         <thead>
                         <tr>
@@ -112,9 +112,23 @@
         vertical-align: middle;
     }
 
+    .dataTables_wrapper {
+        /* prevent the whole thing from scrolling to keep the header in place */
+        overflow: hidden;
+    }
+    .dataTables_wrapper .row .col-sm-12 {
+        /* add scrolling just for the table body's wrapper */
+        overflow-x: scroll;
+        /* make the scrolling kinetic/inertial on iOS */
+        -webkit-overflow-scrolling: touch;
+    }
+
     @media screen and (max-width: 767px) {
         .table-responsive {
             border: 0;
+        }
+        .input-sm {
+            font-size: 16px;
         }
     }
 </style>
