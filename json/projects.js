@@ -83,6 +83,13 @@ export default {
             repo_link: 'https://github.com/Abdur-rahmaanJ/honeybot',
             description: 'IRC bot with plugins',
             language_tag: 'Python'
+        },
+        {
+            github_username: 'cedpoilly',
+            repo_name: 'vue-gapi',
+            repo_link: 'https://github.com/cedpoilly/vue-gapi',
+            description: 'A Vue wrapper for Google\'s API (GAPI) client',
+            language_tag: 'JavaScript/TypeScript'
         }
 
     ]
