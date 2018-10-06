@@ -87,7 +87,7 @@
 </script>
 
 
-<style>
+<style lang="css" scoped>
     .content {
         min-height: calc(100vh - 335px);
     }

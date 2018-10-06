@@ -14,7 +14,7 @@
     </div>
 </template>
 
-<style>
+<style lang="css" scoped>
     .hero {
         background: #136a8a; /* fallback for old browsers */
         background: -webkit-linear-gradient(to left, #136a8a, #267871); /* Chrome 10-25, Safari 5.1-6 */

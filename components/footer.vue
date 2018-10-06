@@ -16,7 +16,7 @@
         }
     }
 </script>
-<style>
+<style lang="css" scoped>
     .footer {
         position: absolute;
         width: 100%;

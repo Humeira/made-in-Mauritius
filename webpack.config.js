@@ -1,6 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
-var extractTextPlugin = require('extract-text-webpack-plugin')
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
     entry: {
@@ -36,8 +36,10 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                loader: extractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader' })
-
+                use: [
+                  'vue-style-loader',
+                  'css-loader'
+                ]
             },
             {
                 test: /\.(png|woff|woff2|eot|ttf|svg)$/,
@@ -56,7 +58,7 @@ module.exports = {
             jQuery: 'jquery'
         }),
 
-        new extractTextPlugin('[name].css')
-    ],
+        new VueLoaderPlugin()
+    ]
 
 }
