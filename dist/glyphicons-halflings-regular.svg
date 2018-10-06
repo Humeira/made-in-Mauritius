@@ -1,4 +1,6 @@
-module.exports = "data:image/svg+xml;base64,bW9kdWxlLmV4cG9ydHMgPSBfX3dlYnBhY2tfcHVibGljX3BhdGhfXyArICJnbHlwaGljb25zLWhhbGZsaW5ncy1yZWd1bGFyLnN2ZyI7""http://www.w3.org/2000/svg">
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
 <metadata></metadata>
 <defs>
 <font id="glyphicons_halflingsregular" horiz-adv-x="1200" >
