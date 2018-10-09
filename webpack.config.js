@@ -3,6 +3,8 @@ var webpack = require('webpack');
 const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
+    mode: 'production',
+
     entry: {
         app: './src/index.js',
         lib: [
@@ -10,6 +12,7 @@ module.exports = {
             'jquery/dist/jquery.min'
         ]
     },
+
     output: {
         path: path.resolve(__dirname, './dist'),
         publicPath: '/dist/',
