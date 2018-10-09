@@ -1,7 +1,7 @@
 <template>
     <div class="container content">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col">
                 <div class="table-responsive p-30 m-t-30 ">
                     <table class="table table-bordered table-striped" id="project-table">
                         <thead>
@@ -23,8 +23,8 @@
                             <td><a :href="project.repo_link">{{project.repo_name}}</a></td>
                             <td>{{project.description}}</td>
                             <td>
-                                    <span class="label"
-                                          v-bind:class="[getColourTag(project.language_tag) ? toString(project.language_tag) : 'label-default']">
+                                    <span class="badge"
+                                          v-bind:class="[getColourTag(project.language_tag) ? toString(project.language_tag) : 'badge-secondary']">
                                      {{project.language_tag}}
                                     </span>
                             </td>
@@ -130,5 +130,9 @@
         .input-sm {
             font-size: 16px;
         }
+    }
+
+    .badge {
+        color: #fff
     }
 </style>

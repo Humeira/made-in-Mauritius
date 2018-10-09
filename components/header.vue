@@ -1,68 +1,83 @@
 <template>
     <div class="container-fluid">
         <div class="row">
-            <div class="hero">
-                <h1 class="hero__title">
-                    Made in Mauritius
-                </h1>
-                <p class="hero__desc">
-                    A list of cool open source projects developed on the beautiful island of Mauritius
-                </p>
-                <a class="btn btn-info btn-lg hero__btn" :href="'https://github.com/Humeira/made-in-Mauritius/blob/master/CONTRIBUTION.MD'">Add your projects</a>
+            <div class="col">
+                <div class="hero">
+                    <h1 class="hero__title">
+                        Made in Mauritius
+                    </h1>
+                    <p class="hero__desc">
+                        A list of cool open source projects developed on the beautiful island of Mauritius
+                    </p>
+                    <a class="btn btn-info btn-lg hero__btn" :href="'https://github.com/Humeira/made-in-Mauritius/blob/master/CONTRIBUTION.MD'">Add your projects</a>
+                </div>
             </div>
         </div>
     </div>
 </template>
 
 <style lang="css" scoped>
-    .hero {
-        background: #136a8a; /* fallback for old browsers */
-        background: -webkit-linear-gradient(to left, #136a8a, #267871); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to left, #136a8a, #267871); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        min-height: 275px;
-        padding: 0;
-    }
+.col {
+    padding: 0;
+}
 
-    .hero__title {
-        padding-top: 60px;
-        margin: 0;
-        font-size: 48px;
-        font-weight: bold;
-        text-align: center;
-        color: #fafafa;
-    }
+.hero {
+  background: #136a8a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #136a8a,
+    #267871
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #136a8a,
+    #267871
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  max-width: 100%;
+  min-height: 275px;
+  padding: 0;
+}
 
-    .hero__desc {
-        padding: 10px;
-        font-size: 24px;
-        text-align: center;
-        color: #fafafa
-    }
+.hero__title {
+  padding-top: 60px;
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  color: #fafafa;
+}
 
-    .hero__btn {
-        border: 2px solid;
-        background: transparent;
-        max-width: 200px;
-        display: block;
-        margin: 0 auto;
-        transition: 0.2s ease-in background;
-    }
+.hero__desc {
+  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+  color: #fafafa;
+}
 
-    .hero__btn:hover, .hero__btn:focus {
-        background: #fff;
-        border-color: #136a8a;
-        color: #136a8a;
-    }
+.hero__btn {
+  border: 2px solid;
+  background: transparent;
+  max-width: 200px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.2s ease-in background;
+}
 
-    @media screen and (max-width: 640px) {
-        .hero__title {
-            padding-top: 50px;
-            font-size: 36px;
-        }
+.hero__btn:hover,
+.hero__btn:focus {
+  background: #fff;
+  border-color: #136a8a;
+  color: #136a8a;
+}
 
-        .hero__desc {
-            font-size: 22px;
-        }
-    }
+@media screen and (max-width: 640px) {
+  .hero__title {
+    padding-top: 50px;
+    font-size: 36px;
+  }
 
+  .hero__desc {
+    font-size: 22px;
+  }
+}
 </style>
