@@ -16,9 +16,37 @@ export default {
         },
         {
             github_username: 'Mscraftsman',
-            repo_name: 'devcon2017',
+            repo_name: 'Developers Conference 2015',
+            repo_link: 'https://github.com/mscraftsman/devcon2015',
+            description: 'Website of Developers Conference 2015 in Mauritius ',
+            language_tag: 'CSS'
+        },
+        {
+            github_username: 'Mscraftsman',
+            repo_name: 'Developers Conference 2016',
+            repo_link: 'https://github.com/mscraftsman/devcon2016',
+            description: 'Website of Developers Conference 2016 in Mauritius ',
+            language_tag: 'CSS'
+        },
+        {
+            github_username: 'Mscraftsman',
+            repo_name: 'Developers Conference 2017',
             repo_link: 'https://github.com/mscraftsman/devcon2017',
             description: 'Website of Developers Conference 2017 in Mauritius ',
+            language_tag: 'CSS'
+        },
+        {
+            github_username: 'Mscraftsman',
+            repo_name: 'Developers Conference 2018',
+            repo_link: 'https://github.com/mscraftsman/devcon2018',
+            description: 'Website of Developers Conference 2018 in Mauritius ',
+            language_tag: 'CSS'
+        },
+        {
+            github_username: 'Mscraftsman',
+            repo_name: 'Developers Conference 2019',
+            repo_link: 'https://github.com/mscraftsman/devcon2019',
+            description: 'Website of Developers Conference 2019 in Mauritius ',
             language_tag: 'CSS'
         },
         {
