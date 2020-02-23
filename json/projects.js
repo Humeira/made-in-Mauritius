@@ -126,5 +126,6 @@ export default {
             description: 'A flask app boilerplate template generator.',
             language_tag: 'Python'
         }
+
     ]
 }
