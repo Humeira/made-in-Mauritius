@@ -118,6 +118,13 @@ export default {
             repo_link: 'https://github.com/cedpoilly/vue-gapi',
             description: 'A Vue wrapper for Google\'s API (GAPI) client',
             language_tag: 'JavaScript/TypeScript'
+        },
+        {
+            github_username: 'kouul',
+            repo_name: 'build-flask-app',
+            repo_link: 'https://pypi.org/project/build-flask-app/',
+            description: 'A flask app boilerplate template generator.',
+            language_tag: 'Python'
         }
 
     ]
