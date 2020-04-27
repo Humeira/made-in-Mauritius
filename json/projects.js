@@ -121,8 +121,8 @@ export default {
         },
         {
             github_username: 'kouul',
-            repo_name: 'build-flask-app',
-            repo_link: 'https://pypi.org/project/build-flask-app/',
+            repo_name: 'buildflaskapp',
+            repo_link: 'https://github.com/askyourkode/buildflaskapp/',
             description: 'A flask app boilerplate template generator.',
             language_tag: 'Python'
         }
